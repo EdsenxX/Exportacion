@@ -44,10 +44,10 @@
                 <img src="<?php echo $row['imagen']; ?>" class="port">
                 <center><p class="pad"><?php echo $row['nombre'];?></p></center>
 
-                <select name="" class="lista">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                <select name="transporte" class="lista">
+                    <option value="Aerea"></option>
+                    <option value="Terrestre"></option>
+                    <option value="Maritima"></option>
                 </select>
                 <select name="" class="lista">
                     <option value="10">10</option>
@@ -61,11 +61,11 @@
                     <option value="90">90</option>
                     <option value="100">100</option>
                 </select>
-                <select name="" class="lista">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                <select name="pais" class="lista">
+                    <option value="Alemania"></option>
+                    <option value="China"></option>
+                    <option value="Canada"></option>
+                    <option value="E.E.U.U"></option>
                 </select>
 
             </div>
