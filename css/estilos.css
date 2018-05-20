@@ -4,7 +4,7 @@
 }
 
 body{
-	background:#E8E6E6;
+	background:#F3F2F2;
 }
 
 .contenedor {
@@ -80,4 +80,5 @@ a{
 	font-size: 15px;
 	padding: 5px;
 	width: 30%;
+	cursor: pointer;
 }

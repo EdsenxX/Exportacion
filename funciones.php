@@ -9,6 +9,7 @@
                     <meta http-equiv="X-UA-Compatible" content="ie=edge">
                     <title>Costo de Exportación</title>
                     <link rel="stylesheet" href="css/estilos.css">
+					<link rel="shortcut icon" href="imagenes/mundo.png">
                     
                     <!-- Aqui esta todo lo que corresponde al menu -->
                     <link rel="stylesheet" href="css/menu.css">

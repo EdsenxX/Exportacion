@@ -30,9 +30,9 @@
     ?>
 
     <!-- Aqui Empiesa el contenido de la pagina-->
-    <form action="">
+    <section>
 	
-    <div id="con">
+    <form action="calcular.php" id="con">
         <?php
             $N=0;
             while ($row=mysqli_fetch_array($resultado)) {
@@ -49,7 +49,7 @@
                     <option value="Terrestre">Terrestre</option>
                     <option value="Maritima">Maritima</option>
                 </select>
-                <select name="" class="lista">
+                <select name="cantidad" class="lista">
                     <option value="10">10</option>
                     <option value="20">20</option>
                     <option value="30">30</option>
@@ -68,7 +68,7 @@
                     <option value="E.E.U.U">E.E.U.U</option>
                 </select>
 
-                <center><input type="button" value="Calcular" class="boton"></center>
+                <center><input type="submit" value="Calcular" class="boton" method="post"></center>
 
             </div>
         </div><!--</a>-->
@@ -76,8 +76,8 @@
                         $N=$N+1;
                         }	
                     ?>
-    </div>
-</form>
+    </form>
+</section>
 
 </body>
 </html>
