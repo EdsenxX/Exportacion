@@ -45,7 +45,7 @@
 		            <nav>
 			            <ul>
 			
-				            <li><a href="#"><span class="icon-home"></span>Inicio</a></li>
+				            <li><a href="index.php"><span class="icon-home"></span>Inicio</a></li>
 				            <li class="submenu">
 				                <a href="#"><span class="icon-books"></span>Basico<span class="caret icon-circle-down"></span></a>
                             

@@ -44,11 +44,13 @@
                 <img src="<?php echo $row['imagen']; ?>" class="port">
                 <center><p class="pad"><?php echo $row['nombre'];?></p></center>
 
+                <p>Transporte:</p>
                 <select name="transporte" class="lista">
                     <option value="Aerea">Aerea</option>
                     <option value="Terrestre">Terrestre</option>
                     <option value="Maritima">Maritima</option>
                 </select>
+                <p>Cantidad (Toneladas)</p>
                 <select name="cantidad" class="lista">
                     <option value="10">10</option>
                     <option value="20">20</option>
@@ -61,6 +63,7 @@
                     <option value="90">90</option>
                     <option value="100">100</option>
                 </select>
+                <p>Pais</p>
                 <select name="pais" class="lista">
                     <option value="Alemania">Alemania</option>
                     <option value="China">China</option>
