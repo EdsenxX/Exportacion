@@ -30,7 +30,7 @@
     ?>
 
     <!-- Aqui Empiesa el contenido de la pagina-->
-    <section>
+    <form action="">
 	
     <div id="con">
         <?php
@@ -45,9 +45,9 @@
                 <center><p class="pad"><?php echo $row['nombre'];?></p></center>
 
                 <select name="transporte" class="lista">
-                    <option value="Aerea"></option>
-                    <option value="Terrestre"></option>
-                    <option value="Maritima"></option>
+                    <option value="Aerea">Aerea</option>
+                    <option value="Terrestre">Terrestre</option>
+                    <option value="Maritima">Maritima</option>
                 </select>
                 <select name="" class="lista">
                     <option value="10">10</option>
@@ -62,11 +62,13 @@
                     <option value="100">100</option>
                 </select>
                 <select name="pais" class="lista">
-                    <option value="Alemania"></option>
-                    <option value="China"></option>
-                    <option value="Canada"></option>
-                    <option value="E.E.U.U"></option>
+                    <option value="Alemania">Alemania</option>
+                    <option value="China">China</option>
+                    <option value="Canada">Canada</option>
+                    <option value="E.E.U.U">E.E.U.U</option>
                 </select>
+
+                <center><input type="button" value="Calcular" class="boton"></center>
 
             </div>
         </div><!--</a>-->
@@ -75,7 +77,7 @@
                         }	
                     ?>
     </div>
-</section>
+</form>
 
 </body>
 </html>
