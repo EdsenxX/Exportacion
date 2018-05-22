@@ -75,6 +75,10 @@ a{
 	margin-bottom: 5px;
 }
 
+.oculto{
+	display: none;
+}
+
 .boton{
 	background: rgba(0, 0, 0, 0.8);
 	color: #fff;
@@ -83,4 +87,21 @@ a{
 	padding: 5px;
 	width: 30%;
 	cursor: pointer;
+}
+
+.calcular{
+	background: #fff;
+	width: 80%;
+	height: 20rem;
+}
+
+.bandera{
+	width: 7%;
+	height: 25%;
+	border-radius: 50%;
+}
+
+.transporte{
+	width: 7%;
+	height: 25%;
 }

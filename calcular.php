@@ -2,6 +2,12 @@
     include('funciones.php');
     include('conexion.php');
 
+    $id = $_GET['id'];
+
+    //$co=mysqli_connect($host,$user,$pw,$db) or die("problemas en la conexion");
+	//$mos=mysqli_query($co,"SELECT * FROM 'productos' WHERE id_producto=$id")or die("problemas al extrar datos (calcular.php:8)");
+	//$row= $mos->fetch_assoc();
+
     $pais = $_GET['pais'];
     $transporte = $_GET['transporte'];
     $cantidad = $_GET['cantidad'];
@@ -27,40 +33,40 @@
         echo $cantidad;
     ?>
 
-    <div>
+    <center><div class="calcular">
         <?php if ($pais=='Alemania') {
             ?>
-                <img src="imagenes/banderas/alemania.png" alt="Bandera de Alemania" title="Bandera De Alemania">
+                <img class="bandera" src="imagenes/banderas/alemania.png" alt="Bandera de Alemania" title="Bandera De Alemania">
             <?php
         }elseif ($pais=='China') {
             ?>
-                <img src="imagenes/banderas/china.jpg" alt="Bandera de China" title="Bandera De China">
+                <img class="bandera" src="imagenes/banderas/china.jpg" alt="Bandera de China" title="Bandera De China">
             <?php
         }elseif ($pais=='E.E.U.U') {
             ?>
-                <img src="imagenes/banderas/estados_unidos.png" alt="Bandera de Estados Unidos" title="Bandera De Estados Unidos">
+                <img class="bandera" src="imagenes/banderas/estados_unidos.png" alt="Bandera de Estados Unidos" title="Bandera De Estados Unidos">
             <?php
         }elseif ($pais=='Canada') {
             ?>
-                <img src="imagenes/banderas/canada.png" alt="Bandera de Canada" title="Bandera De Canada">
+                <img class="bandera" src="imagenes/banderas/canada.png" alt="Bandera de Canada" title="Bandera De Canada">
             <?php
         }
         
         if ($transporte=='Aerea') {
             ?>
-                <img src="imagenes/transportes/avion.png" alt="Transporte Aereo" title="Transporte Aereo">
+                <img class="transporte" src="imagenes/transportes/avion.png" alt="Transporte Aereo" title="Transporte Aereo">
             <?php
         }elseif ($transporte=='Maritima') {
             ?>
-                <img src="imagenes/transportes/barco.png" alt="Transporte Maritimo" title="Transporte Maritimo">
+                <img class="transporte" src="imagenes/transportes/barco.png" alt="Transporte Maritimo" title="Transporte Maritimo">
             <?php
         }elseif ($transporte=='Terrestre') {
             ?>
-                <img src="imagenes/transportes/camion.png" alt="Transporte Terrestre" title="Transporte Maritimo">
+                <img class="transporte" src="imagenes/transportes/camion.png" alt="Transporte Terrestre" title="Transporte Maritimo">
             <?php
         }?>
 
-    </div>
+    </div></center>
 
     </body>
 </html>

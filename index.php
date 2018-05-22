@@ -39,8 +39,8 @@
             $N=$N+1;		
         ?>
     
-        <!--<a href="archivo.php?id=<?php echo $row['id']; ?>">--><div class="contenedor">
-            <form class="elemento" action="calcular.php" id="con">
+        <div class="contenedor">
+            <form class="elemento" action="calcular.php?id=<?php echo $row['id_producto']?>" id="con">
                 <img src="<?php echo $row['imagen']; ?>" class="port">
                 <center><p class="pad"><?php echo $row['nombre'];?></p></center>
 
@@ -50,6 +50,7 @@
                     <option value="Terrestre">Terrestre</option>
                     <option value="Maritima">Maritima</option>
                 </select>
+
                 <p>Cantidad (Toneladas)</p>
                 <select name="cantidad" class="lista">
                     <option value="10">10</option>
@@ -63,6 +64,7 @@
                     <option value="90">90</option>
                     <option value="100">100</option>
                 </select>
+
                 <p>Pais</p>
                 <select name="pais" class="lista">
                     <option value="Alemania">Alemania</option>
@@ -74,7 +76,7 @@
                 <center><input type="submit" value="Calcular" class="boton" method="post"></center>
 
             </div>
-        </form><!--</a>-->
+        </form>
                     <?php
                         $N=$N+1;
                         }	
