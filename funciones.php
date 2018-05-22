@@ -101,10 +101,10 @@
             ?>
                 <div class="slider-wrapper theme-mi-slider">
 		            <div id="slider" class="nivoSlider">     
-		                <img src="imagenes/1.jpg" alt="" title="#htmlcaption1" />    
-		                <img src="imagenes/2.jpg" alt="" title="#htmlcaption2" />    
-		                <img src="imagenes/3.jpg" alt="" title="#htmlcaption3" /> 
-						<img src="imagenes/4.jpg" alt="" title="#htmlcaption4" />     
+		                <img src="imagenes/slideshow/1.jpg" alt="" title="#htmlcaption1" />    
+		                <img src="imagenes/slideshow/2.jpg" alt="" title="#htmlcaption2" />    
+		                <img src="imagenes/slideshow/3.jpg" alt="" title="#htmlcaption3" /> 
+						<img src="imagenes/slideshow/4.jpg" alt="" title="#htmlcaption4" />     
 		            </div> 
 		            <!--<div id="htmlcaption1" class="nivo-html-caption">     
 		                <h1>Sean Bienvenidos</h1>
