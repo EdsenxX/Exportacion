@@ -32,7 +32,7 @@
     <!-- Aqui Empiesa el contenido de la pagina-->
     <section>
 	
-    <form action="calcular.php" id="con">
+    <div>
         <?php
             $N=0;
             while ($row=mysqli_fetch_array($resultado)) {
@@ -40,7 +40,7 @@
         ?>
     
         <!--<a href="archivo.php?id=<?php echo $row['id']; ?>">--><div class="contenedor">
-            <div class="elemento">
+            <form class="elemento" action="calcular.php" id="con">
                 <img src="<?php echo $row['imagen']; ?>" class="port">
                 <center><p class="pad"><?php echo $row['nombre'];?></p></center>
 
@@ -74,12 +74,12 @@
                 <center><input type="submit" value="Calcular" class="boton" method="post"></center>
 
             </div>
-        </div><!--</a>-->
+        </form><!--</a>-->
                     <?php
                         $N=$N+1;
                         }	
                     ?>
-    </form>
+    </div>
 </section>
 
 </body>
