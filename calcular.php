@@ -1,12 +1,13 @@
 <?php 
-    include('funciones.php');
-    include('conexion.php');
 
     $id = $_GET['id'];
 
-    //$co=mysqli_connect($host,$user,$pw,$db) or die("problemas en la conexion");
-	//$mos=mysqli_query($co,"SELECT * FROM 'productos' WHERE id_producto=$id")or die("problemas al extrar datos (calcular.php:8)");
-	//$row= $mos->fetch_assoc();
+    include('funciones.php');
+    include('conexion.php');
+
+    $co=mysqli_connect($host,$user,$pw,$db) or die("problemas en la conexion");
+    $mos=mysqli_query($co,"SELECT * FROM 'productos' WHERE id_producto=$id")or die("problemas al extrar datos (calcular.php:8)");
+	$row= $mos->fetch_assoc();
 
     $pais = $_GET['pais'];
     $transporte = $_GET['transporte'];
@@ -34,6 +35,9 @@
     ?>
 
     <center><div class="calcular">
+
+         <img class="producto" src="<?php echo $row['imagen']?>" alt="<?php echo $row['nombre']?>">
+
         <?php if ($pais=='Alemania') {
             ?>
                 <img class="bandera" src="imagenes/banderas/alemania.png" alt="Bandera de Alemania" title="Bandera De Alemania">
