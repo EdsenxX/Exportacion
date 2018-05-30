@@ -75,6 +75,10 @@ a{
 	margin-bottom: 5px;
 }
 
+.listaaa{
+	display: none;
+}
+
 .oculto{
 	display: none;
 }
@@ -95,13 +99,30 @@ a{
 	height: 20rem;
 }
 
+
+.nombre{
+	font-size: 3vw;
+}
+
+/*.ban{
+	width: 70%;
+}*/
+
+.producto{
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+
 .bandera{
 	width: 7%;
 	height: 25%;
 	border-radius: 50%;
+	margin-top: 10px;
 }
 
 .transporte{
 	width: 7%;
 	height: 25%;
+	margin-top: 10px;
 }

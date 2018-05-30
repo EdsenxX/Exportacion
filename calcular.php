@@ -1,12 +1,11 @@
 <?php 
 
-    $id = $_GET['id'];
+   $id = $_GET['id'];
 
     include('funciones.php');
     include('conexion.php');
-
     $co=mysqli_connect($host,$user,$pw,$db) or die("problemas en la conexion");
-    $mos=mysqli_query($co,"SELECT * FROM 'productos' WHERE id_producto=$id")or die("problemas al extrar datos (calcular.php:8)");
+    $mos=mysqli_query($co,"SELECT * FROM `productos` WHERE `id_producto`=$id")or die("problemas al extrar datos (calcular.php:8)");
 	$row= $mos->fetch_assoc();
 
     $pais = $_GET['pais'];
@@ -36,8 +35,9 @@
 
     <center><div class="calcular">
 
-         <img class="producto" src="<?php echo $row['imagen']?>" alt="<?php echo $row['nombre']?>">
-
+        <img class="producto" src="<?php echo $row['imagen']?>" alt="<?php echo $row['nombre']?>">
+        <h2 class="nombre"><?php echo $row['nombre']?></h2>
+            
         <?php if ($pais=='Alemania') {
             ?>
                 <img class="bandera" src="imagenes/banderas/alemania.png" alt="Bandera de Alemania" title="Bandera De Alemania">
@@ -55,7 +55,7 @@
                 <img class="bandera" src="imagenes/banderas/canada.png" alt="Bandera de Canada" title="Bandera De Canada">
             <?php
         }
-        
+
         if ($transporte=='Aerea') {
             ?>
                 <img class="transporte" src="imagenes/transportes/avion.png" alt="Transporte Aereo" title="Transporte Aereo">
@@ -69,7 +69,6 @@
                 <img class="transporte" src="imagenes/transportes/camion.png" alt="Transporte Terrestre" title="Transporte Maritimo">
             <?php
         }?>
-
     </div></center>
 
     </body>

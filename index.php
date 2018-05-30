@@ -41,10 +41,14 @@
     
         <div class="contenedor">
                 
-            <form class="elemento" action="calcular.php?id=<?php echo $row['id_producto']?>" id="con"  >   
+            <form class="elemento" action="calcular.php" id="con"> 
             <!--<form class="elemento" action="calcular.php?id=<?php echo $row['id_producto']?>" id="con">-->
                 <img src="<?php echo $row['imagen']; ?>" class="port">
                 <center><p class="pad"><?php echo $row['nombre'];?></p></center>
+
+                <select name="id" class="listaaa">
+                    <option value="<?php echo $row['id_producto']?>"><?php echo $row['id_producto']?></option>
+                </select>
 
                 <p>Transporte:</p>
                 <select name="transporte" class="lista">
