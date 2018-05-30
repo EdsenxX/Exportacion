@@ -93,6 +93,18 @@ a{
 	cursor: pointer;
 }
 
+.botonn{
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	border: 1px solid red;
+	font-size: 15px;
+	padding: 5px;
+	width: 120px;
+	cursor: pointer;
+	margin-left: 270px;
+	margin-top: 20px;
+}
+
 .calcular{
 	background: #fff;
 	width: 80%;

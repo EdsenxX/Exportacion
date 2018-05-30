@@ -28,9 +28,9 @@
     ?>
 
     <?php 
-        echo $pais;
+        /*echo $pais;
         echo $transporte;
-        echo $cantidad;
+        echo $cantidad;*/
     ?>
 
     <center><div class="calcular">
@@ -69,7 +69,10 @@
                 <img class="transporte" src="imagenes/transportes/camion.png" alt="Transporte Terrestre" title="Transporte Maritimo">
             <?php
         }?>
+
     </div></center>
+
+       <center><input type="submit" value="Imprimir ticket" class="botonn"></center>
 
     </body>
 </html>

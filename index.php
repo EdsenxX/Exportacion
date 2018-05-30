@@ -42,7 +42,7 @@
         <div class="contenedor">
                 
             <form class="elemento" action="calcular.php" id="con"> 
-            <!--<form class="elemento" action="calcular.php?id=<?php echo $row['id_producto']?>" id="con">-->
+            
                 <img src="<?php echo $row['imagen']; ?>" class="port">
                 <center><p class="pad"><?php echo $row['nombre'];?></p></center>
 
