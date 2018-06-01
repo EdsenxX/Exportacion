@@ -8,9 +8,16 @@
     $mos=mysqli_query($co,"SELECT * FROM `productos` WHERE `id_producto`=$id")or die("problemas al extrar datos (calcular.php:8)");
 	$row= $mos->fetch_assoc();
 
+    //Aqui Obtenemos los valores enviados por metodo post
     $pais = $_GET['pais'];
     $transporte = $_GET['transporte'];
     $cantidad = $_GET['cantidad'];
+
+    //Aqui estan todos los calculos
+    $fob = $row['costo'] * $cantidad;
+    $impuestos = $fob * $row['impuestos'];
+    $flete = '3821';
+    $total = $fob + $impuestos + $flete;
 
 
 ?>
@@ -71,18 +78,38 @@
         }?>
 
         <div class="precio">
-            <p>Precio Original</p>
+            <p>FOB</p>
             <p>$<?php echo $row['costo'] ?></p>    
-        </div>
-
-        <div class="arancel">
-            <p>Arancel</p>
-            <p>0</p>    
         </div>
 
         <div class="cantidad">
             <p>Cantidad</p>
             <p><?php echo $cantidad ?> Toneladas</p>    
+        </div>
+
+        <div class="arancel">
+            <p>Total FOB</p>
+            <p>$<?php echo $fob ?></p>    
+        </div>
+
+        <div class="flete">
+            <p>Flete</p>
+            <p>$<?php echo $flete ?></p>    
+        </div>
+
+        <div class="seguro">
+            <p>Seguro</p>
+            <p>$0<?php //echo $seguro ?></p>    
+        </div>
+
+        <div class="impuestos">
+            <p>Impuestos</p>
+            <p>$<?php echo $impuestos ?></p>    
+        </div>
+
+        <div class="total">
+            <strong><p>Total</p>
+            <p>$0<?php echo $total ?></p></strong>    
         </div>
 
     </div></center>
