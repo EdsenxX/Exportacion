@@ -38,62 +38,18 @@
             ?>
                 
                 <header>
-		            <div class="menu_bar">
-			            <a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
-		            </div>
- 
-		            <nav>
-			            <ul>
-			
-				            <li><a href="index.php"><span class="icon-home"></span>Inicio</a></li>
-				            <li class="submenu">
-				                <a href="#"><span class="icon-books"></span>Basico<span class="caret icon-circle-down"></span></a>
-                            
-                                <ul class="children">
-					                <li><a href="#"><span class="icon-book"></span>Matematicas</a></li>
-					                <li><a href="#"><span class="icon-book"></span>LEOyO</a></li>
-					                <li><a href="#"><span class="icon-book"></span>Fisica</a></li>
-					                <li><a href="#"><span class="icon-lab"></span>Quimica</a></li>
-					                <li><a href="#"><span class="icon-book"></span>Calculo</a></li>
-					                <li><a href="#"><span class="icon-leaf"></span>Ecologia</a></li>
-					                <li><a href="#"><span class="icon-book"></span>Biologia</a></li>
-			            	    </ul>
-				            </li>
-				
-				            <li><a href="#"><span class="icon-user-tie"></span>Profecinal<span class="caret icon-circle-down"></span></a>
-				                <ul class="children">
-					                <li><a href="#"><span class="icon-terminal"></span>Programacion</a></li>
-					                <li><a href="#"><span class="icon-video-camera"></span>Electricidad</a></li>
-					                <li><a href="#"><span class="icon-lab"></span>Analista Quimico</a></li>
-					                <li><a href="#"><span class="icon-camera"></span>Comunicacion</a></li>
-					                <li><a href="#"><span class="icon-spoon-knife"></span>Alimentos y Bebidas</a></li>
-					                <li><a href="#"><span class="icon-book"></span>Contabilidad</a></li>
-				                </ul>
-				            </li>
-				
-				            <li><a href="#"><span class="icon-film"></span>Multimedia<span class="caret icon-circle-down"></span></a>
-				                <ul class="children">
-					                <li><a href="#">Programacion</a></li>
-					                <li><a href="#">Electricidad</a></li>
-					                <li><a href="#">Analista Quimico</a></li>
-					                <li><a href="#">Comunicacion</a></li>
-				                </ul>
-				            </li>
-				
-				            <li><a href="#"><span class="icon-book"></span>Extra</a></li>
-				
-				            <li><a href="#"><span class="icon-question"></span>Ayuda</a></li>
-				
-				            <li><a href="#"><span class="icon-user"></span>Cuenta<span class="caret icon-circle-down"></a>
-				                <ul class="children">
-					                <li><a href="#">Mi cuenta<span class="icon-user"></span></a></li>
-					                <li><a href="#">Salir<span class="icon-exit"></span></a></li>
-				                </ul>
-				            </li>
-			
-			            </ul>
-		            </nav>
-	            </header>
+				<div class="ancho">
+					<div class="logo">
+						<p><a href="index.php">Serrano Corp.</a></p>
+					</div>
+					<nav>
+						<ul>
+						<li><a href="index.php"><span class="fa fa-home"></span>Inicio</a></li>
+						<li><a href="#con"><span class="fa fa-gamepad"></span>Productos</a></li>
+					</ul>
+				</nav>
+				</div>
+			</header>
             <?php
         }
 
@@ -122,6 +78,14 @@
 	            </div>
             <?php
         }
+
+		public static function footer(){//Aqui esta todo lo del foter
+			?>
+				<div class="footer">
+					<marquee behavior="" direction=""> SerranoCorp ©2018 Copyright Todos Los Derechos Reservados </marquee>
+				</div>
+			<?php
+		}
 
     }
 ?>
