@@ -138,3 +138,24 @@ a{
 	height: 25%;
 	margin-top: 10px;
 }
+
+.precio{
+	font-size:20px;
+	position: relative;
+	right: 270px;
+	top: 70px;
+}
+
+.arancel{
+	font-size:20px;
+	position: relative;
+	right: 150px;
+	top: 24px;
+}
+
+.cantidad{
+	font-size:20px;
+	position: relative;
+	right: 40px;
+	top: -22px;
+}

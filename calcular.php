@@ -70,6 +70,21 @@
             <?php
         }?>
 
+        <div class="precio">
+            <p>Precio Original</p>
+            <p>$<?php echo $row['costo'] ?></p>    
+        </div>
+
+        <div class="arancel">
+            <p>Arancel</p>
+            <p>0</p>    
+        </div>
+
+        <div class="cantidad">
+            <p>Cantidad</p>
+            <p><?php echo $cantidad ?> Toneladas</p>    
+        </div>
+
     </div></center>
 
        <center><input type="submit" value="Imprimir ticket" class="botonn"></center>
